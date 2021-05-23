@@ -1,6 +1,9 @@
+# Visual Studio code
 .project
 .vscode
 .vscode/
+
+# C Language
 # Prerequisites
 *.d
 
@@ -33,7 +36,7 @@
 
 # Executables
 *.exe
-*.out
+# *.out
 *.app
 *.i*86
 *.x86_64
@@ -82,6 +85,7 @@ share/python-wheels/
 *.egg
 MANIFEST
 
+# Python
 # PyInstaller
 #  Usually these files are written by a python script from a template
 #  before PyInstaller builds the exe, so as to inject date/other infos into it.
