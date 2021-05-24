@@ -4,21 +4,21 @@
    for fahr = 0, 20, ... 30 *; floating-point version */
 main()
 {
-    int fahr, celsius;
+    float fahr, celsius;
     int lower, upper, step;
 
-    lower = 0;   /* lower limit of temperature table */
-    upper = 100; /* upper limit */
-    step = 10;   /* step size */
+    lower = -10;   /* lower limit of temperature table */
+    upper = 40; /* upper limit */
+    step = 2;   /* step size */
 
     celsius = lower;
 
     printf("degC\tdegF\n");
-    printf("----\t----\n");
+    printf("-----\t-----\n");
 
     while (celsius <= upper) {
-        fahr = (celsius * 1.8) + 32;
-        printf("%d\t%d\n", celsius, fahr);
+        fahr = (celsius * 1.80) + 32.00;
+        printf("%.1f\t%.1f\n", celsius, fahr);
         celsius = celsius + step;
     } 
 }
